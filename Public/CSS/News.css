@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão do corpo */
+    background-color: #F2F2F2; /* Cor de fundo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+header {
+    margin-top: 10px; /* Espaço acima do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    margin-top:100px;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho do título */
+    color: #072C47; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+main {
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 20px; /* Espaço acima da seção principal */
+}
+
+#noticias-container {
+    display: flex; /* Usa flexbox para o layout dos cartões */
+    flex-wrap: wrap; /* Permite quebra de linha dos cartões */
+    justify-content: space-around; /* Espaço igual entre os cartões */
+    gap: 20px; /* Espaço entre os cartões */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    padding: 0 20px; /* Preenchimento horizontal do contêiner */
+}
+
+.card {
+    background-color: #FFF; /* Cor de fundo do cartão */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+    width: 240px; /* Largura do cartão */
+    height: 300px; /* Altura do cartão */
+    display: flex; /* Usa flexbox para o conteúdo do cartão */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    justify-content: space-between; /* Espaça o conteúdo dentro do cartão */
+    padding: 15px; /* Preenchimento interno do cartão */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+    margin-top:30px;
+    margin-bottom:70px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do cartão ao passar o mouse */
+}
+
+.card h2 {
+    font-size: 1.5em; /* Tamanho do título do cartão */
+    margin: 0; /* Remove margens padrão */
+    color: #072C47; /* Cor do texto */
+}
+
+.card p {
+    font-size: 1em; /* Tamanho do texto da descrição */
+    color: #333; /* Cor do texto da descrição */
+    margin: 5px 0; /* Reduzido para 5px nas margens superior e inferior */
+}
+
+.card a {
+    text-decoration: none; /* Remove sublinhado do link */
+    color: white; /* Cor do texto do link */
+    background-color: #297FB8; /* Cor de fundo do botão */
+    padding: 10px; /* Preenchimento do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    text-align: center; /* Centraliza o texto do botão */
+    transition: background-color 0.3s; /* Transição suave da cor do botão */
+}
+
+.card a:hover {
+    background-color: #1A5E7D; /* Cor do botão ao passar o mouse */
+}

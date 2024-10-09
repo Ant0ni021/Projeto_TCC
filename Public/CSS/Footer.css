@@ -1,0 +1,58 @@
+.footer {
+    background-color: #072C47;               
+    color: white;                            
+    padding: 60px 20px;                      
+    font-family: 'Lato', sans-serif;        
+}
+
+.footer-container {
+    display: flex;                         
+    justify-content: space-between;      
+    max-width: 1200px;                      
+    margin: 0 auto;                          /* Centraliza o contêiner */
+    flex-wrap: wrap;                         /* Permite que as colunas quebrem em telas menores */
+}
+
+.footer-info,
+.footer-links,
+.footer-contato {
+    flex: 1;                                 /* Ocupa espaço disponível */
+    padding: 0 20px;                        /* Espaçamento interno nas colunas */
+    min-width: 200px;                        /* Largura mínima das colunas */
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-contato h3 {
+    font-size: 1.5em;                        /* Tamanho maior do título */
+    margin-bottom: 15px;                     /* Espaço abaixo dos títulos */
+    border-bottom: 2px solid #B0DFF5;       /* Linha abaixo dos títulos */
+    padding-bottom: 10px;                    /* Espaçamento abaixo do título */
+}
+
+.footer-links ul {
+    list-style-type: none;                   /* Remove marcadores da lista */
+    padding: 0;                              /* Remove padding */
+}
+
+.footer-links li {
+    margin-bottom: 10px;                     /* Espaço entre os links */
+}
+
+.footer-links a {
+    color: #B0DFF5;                          /* Cor dos links */
+    text-decoration: none;                   /* Remove sublinhado */
+    transition: color 0.3s;                 /* Transição suave na cor */
+}
+
+.footer-links a:hover {
+    color: #75C0EE;                          /* Cor dos links ao passar o mouse */
+    text-decoration: underline;              /* Sublinha ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;                      /* Centraliza o texto do rodapé */
+    margin-top: 0px;                       /* Espaço acima do rodapé */
+    font-size: 0.9em;                        /* Tamanho menor do texto */
+    padding-top:30px;                      /* Espaçamento acima do texto do rodapé */
+}

@@ -1,0 +1,15 @@
+{
+  "name": "projeto_tcc",
+  "version": "1.0.0",
+  "description": "O Núcleo Psicossocial é uma plataforma web criada com o objetivo de oferecer apoio psicológico para profissionais que lidam com situações emocionalmente desafiadoras no seu dia a dia. A missão do site é fornecer um espaço acolhedor, seguro e profissional para que as pessoas possam encontrar o suporte necessário para enfrentar as adversidades do trabalho e da vida pessoal.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Junior",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1"
+  }
+}

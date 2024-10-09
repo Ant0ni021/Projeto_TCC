@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Estilo da navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: #f4f4f4;            
+    padding: 40px 30px 20px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: none;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave para opacidade e transformação */
+    opacity: 1; /* Começa totalmente visível */
+}
+
+/* Classe para esconder a navbar parcialmente */
+.hidden {
+    opacity: 0.5; /* Torna a navbar parcialmente invisível */
+}
+
+/* Efeito quando o mouse passa sobre a navbar */
+.navbar:hover {
+    opacity: 1; /* Garante que a navbar fique totalmente visível ao passar o mouse */
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #072C47; 
+    text-decoration: none;
+    font-weight: 700; 
+    letter-spacing: 2px;
+    margin-right: 10px; 
+    margin-left: 20px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; 
+}
+
+.nav-links a {
+    color: #072C47; 
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    font-weight: 400; 
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #297FB8; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #297FB8; 
+}
+
+.nav-links a:hover::after {
+    width: 100%; 
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        text-align: center;
+    }
+}
