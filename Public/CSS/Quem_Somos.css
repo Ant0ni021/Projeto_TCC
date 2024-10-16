@@ -1,0 +1,54 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#F2F2F2; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.quem-somos {
+    display: flex;
+    align-items: center; 
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom:100px;
+    margin-top:70px;
+}
+
+.texto {
+    flex: 1; 
+    padding: 20px;
+    color:#072C47;
+    font-weight: bold;
+    
+}
+
+.texto h2 {
+    margin-top: 0; 
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom:10px;
+
+}
+
+.imagem {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    margin-left:100px;
+}
+
+.imagem img {
+    max-width: 100%; 
+    height: auto; 
+}
+span{
+ color:#297FB8;
+}

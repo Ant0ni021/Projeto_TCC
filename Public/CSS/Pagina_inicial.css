@@ -6,26 +6,24 @@ html {
 body {
     margin: 0;
     font-family: 'Lato', sans-serif; /* Adiciona a fonte Lato ao body */
+    overflow-x: hidden;
+
 }
 
 .main-content {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    opacity: 0; 
-    transform: translateY(20px); 
-    transition: opacity 0.5s ease, transform 0.5s ease; 
     margin-top: 30px; 
-    margin-left:46px;
+    margin-right:0px;
 }
 
-.show {
-    opacity: 1;
-    transform: translateY(0); 
-}
 
+.main-container{
+margin-left:50px;
+}
 .main-text {
-    max-width: 600px; 
+    max-width: 300px; 
 }
 
 .main-title {
@@ -40,6 +38,7 @@ body {
     font-family: 'Lato', sans-serif; 
     font-size: 1.2em; 
     line-height: 1.5; 
+    width:80%;
 }
 
 .button-container {
@@ -60,16 +59,46 @@ background-color:#1A5E7D;
 transition:2s;
 }
 .main-image img {
-    max-width: 76%; 
+    max-width: 100%; 
     height: auto; 
-    margin-left:80px;
+   margin-right:500px;
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desliza para cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    animation: slide-in 0.8s ease-out; /* Duração e função de easing */
 }
 
 /* Estilo da Quem Somos */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desliza para cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.8s ease-out;
+}
 #quem-somos {
     display: flex; 
     align-items: center; 
     margin: 60px 30px; 
+    
 }
 
 .imagem-quemsomos {
@@ -107,22 +136,15 @@ transition:2s;
 }
 
 .descricao-missao {
-    font-family: 'Lato', sans-serif; 
-    font-size: 1.1em; 
+ font-family: 'Lato', sans-serif; 
+ font-size: 1.2em; 
     line-height: 1.5; 
     margin-top:20px;
     color: #072C47;
 
 }
-.animar {
-    opacity: 0; 
-    transform: translateY(-20px); 
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
-}
-
-.animar.show {
-  opacity: 1; 
-    transform: translateY(0); 
+.saber-mais{
+ margin-top:30px;
 }
 
 /* Valores */
@@ -130,7 +152,9 @@ transition:2s;
     display: flex;
     flex-direction: column; 
     align-items: center;    
-    margin: 50px 0;       
+    margin: 50px 0;      
+    margin-top:170px; 
+    margin-bottom:200px;
 }
 
 .titulo-valores {
@@ -220,9 +244,9 @@ transition:2s;
 }
 
 .surgir {
-    opacity: 1; /* Fica visível */
-    transform: translateY(0); /* Volta para a posição original */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+    opacity: 1; 
+    transform: translateY(0); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 /* Contato */
 #contato {

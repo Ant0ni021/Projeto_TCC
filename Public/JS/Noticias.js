@@ -2,12 +2,15 @@ const noticias = [
     {
         titulo: "Novo Programa de Apoio",
         descricao: "Lançamos um novo programa para oferecer suporte psicológico aos nossos guardas municipais.",
-        link: "#"
+        link: "#",
+        imagem: "/IMG/imagem1.png" // Adicione o caminho da imagem para cada notícia
+
     },
     {
         titulo: "Treinamento sobre Saúde Mental",
         descricao: "Realizamos um treinamento sobre saúde mental e a importância do autocuidado.",
         link: "#"
+        
     },
     {
         titulo: "Campanha de Conscientização",
@@ -40,17 +43,40 @@ const noticias = [
         link: "#"
     },
 ];
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('noticias-container');
-    
-    noticias.forEach(noticia => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <h2>${noticia.titulo}</h2>
-            <p>${noticia.descricao}</p>
-            <a href="${noticia.link}" target="_blank">Leia mais</a>
-        `;
-        container.appendChild(card);
+    const searchInput = document.getElementById('search-input');
+
+    // Função para renderizar as notícias
+    function renderNoticias(noticiasFiltradas) {
+        container.innerHTML = ''; // Limpa o container
+        noticiasFiltradas.forEach(noticia => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.innerHTML = `
+                <h2>${noticia.titulo}</h2>
+                <p>${noticia.descricao}</p>
+                <a href="${noticia.link}" target="_blank">Leia mais</a>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // Função que filtrar as notícias com base na pesquisa
+    function filterNoticias(query) {
+        const noticiasFiltradas = noticias.filter(noticia =>
+            noticia.titulo.toLowerCase().includes(query.toLowerCase())
+        );
+        renderNoticias(noticiasFiltradas);
+    }
+
+    // Renderiza todas as notícias inicialmente
+    renderNoticias(noticias);
+
+    // Evento de pesquisa
+    searchInput.addEventListener('input', (event) => {
+        const query = event.target.value;
+        filterNoticias(query);
     });
 });

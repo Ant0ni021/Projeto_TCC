@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,47 +7,40 @@
 body {
     font-family: 'Roboto', sans-serif;  
     background-color: #f4f4f4;
-    margin: 0;
 }
 
 /* Estilo da navbar */
 .navbar {
     display: flex;
-    justify-content: flex-start; 
-    align-items: center;
+    align-items: center; /* Alinha a logo e os links verticalmente */
     background-color: #f4f4f4;            
-    padding: 40px 30px 20px; 
+    padding: 10px 30px; /* Ajuste o padding para um espaçamento menor */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
     box-shadow: none;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave para opacidade e transformação */
-    opacity: 1; /* Começa totalmente visível */
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
 /* Classe para esconder a navbar parcialmente */
 .hidden {
-    opacity: 0.5; /* Torna a navbar parcialmente invisível */
+    opacity: 0.5; 
 }
 
 /* Efeito quando o mouse passa sobre a navbar */
 .navbar:hover {
-    opacity: 1; /* Garante que a navbar fique totalmente visível ao passar o mouse */
+    opacity: 1; 
 }
 
-.navbar:hover {
-    opacity: 1;
+.logo {
+    margin-right: 25    px; /* Espaçamento entre a logo e os links */
 }
 
-.logo a {
-    font-size: 24px;
-    color: #072C47; 
-    text-decoration: none;
-    font-weight: 700; 
-    letter-spacing: 2px;
-    margin-right: 10px; 
-    margin-left: 20px; 
+.logo img {
+    width: 50px; /* Ajuste a largura da imagem para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+
 }
 
 .nav-links {
@@ -58,7 +50,7 @@ body {
 }
 
 .nav-links li {
-    margin: 0 20px; 
+    margin: 0 17px; /* Ajuste o espaçamento entre os links */
 }
 
 .nav-links a {

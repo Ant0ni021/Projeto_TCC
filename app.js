@@ -25,6 +25,10 @@ app.get('/NupsNews',function(req, res)  {
 app.get('/agenda',function(req, res)  {
     res.render('agenda');
 });
+app.get('/Quem_Somos',function(req, res)  {
+    res.render('Quem_Somos');
+});
+
 
 app.listen(3000, function() {
     console.log('http://localhost:3000');
