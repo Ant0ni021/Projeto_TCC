@@ -13,4 +13,3 @@ document.getElementById('pesquisa').addEventListener('input', function () {
         }
     });
 });
-

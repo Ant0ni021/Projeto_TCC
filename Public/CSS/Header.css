@@ -12,9 +12,9 @@ body {
 /* Estilo da navbar */
 .navbar {
     display: flex;
-    align-items: center; /* Alinha a logo e os links verticalmente */
+    align-items: center; 
     background-color: #f4f4f4;            
-    padding: 10px 30px; /* Ajuste o padding para um espaçamento menor */
+    padding: 10px 30px; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,12 +34,12 @@ body {
 }
 
 .logo {
-    margin-right: 25    px; /* Espaçamento entre a logo e os links */
+    margin-right: 25px; 
 }
 
 .logo img {
-    width: 50px; /* Ajuste a largura da imagem para o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 50px; 
+    height: auto;
 
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-links li {
-    margin: 0 17px; /* Ajuste o espaçamento entre os links */
+    margin: 0 17px; 
 }
 
 .nav-links a {

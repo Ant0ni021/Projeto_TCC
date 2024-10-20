@@ -16,7 +16,7 @@ header {
     align-items: center; 
     padding: 40px;
     margin: 20px auto;
-    max-width: 1200px; 
+    max-width: 1400px; 
     background-color: #fff; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     margin-bottom:100px;
@@ -28,6 +28,7 @@ header {
     padding: 20px;
     color:#072C47;
     font-weight: bold;
+    text-align: justify;
     
 }
 

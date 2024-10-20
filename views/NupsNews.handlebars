@@ -7,15 +7,157 @@
     <link rel="stylesheet" href="/CSS/News.css">
 </head>
 <body>
-     <header>
-        <h1>Nossas Notícias</h1>
-        <input type="text" id="search-input" placeholder="Pesquisar notícias por título" />
-    </header>
-    <main>
-        <div id="noticias-container"></div> <!-- Container onde as notícias serão renderizadas -->
-    </main>
+ 
+ <header>
+    <h1>Nossas Notícias</h1>
+    <div id="container-pesquisa">
+        <input type="text" id="pesquisa" placeholder="Pesquisar notícias por título ou data" />
+    </div>
+</header>
+
+<main>
+    <div id="container-cartoes" class="cartoes-visiveis">
+        <div class="cartao">
+            <img src="/IMG/Como_Cuidar_da_Saúde_Mental_no_Trabalho.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Saúde Mental</span>
+            <h2>Como Cuidar da Saúde Mental no Trabalho</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Tracey Wilson - 01 de Outubro de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao">
+            <img src="/IMG/Segurança_nas_Escolas_O_que_Precisamos_Saber.jpeg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Segurança</span>
+            <h2>Segurança nas Escolas: O que Precisamos Saber</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Marcos Silva - 10 de Setembro de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao">
+            <img src="/IMG/Eventos_de_Conscientização_sobre_Saúde_Mental.jpeg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Eventos</span>
+            <h2>Eventos de Conscientização sobre Saúde Mental</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Ana Paula - 15 de Agosto de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Como_Praticar_o_Bem-Estar_na_Rotina_Diária.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Bem-Estar</span>
+            <h2>Como Praticar o Bem-Estar na Rotina Diária</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>João Mendes - 25 de Julho de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Iniciativas_Comunitárias_para_o_Apoio_à_Saúde_Mental.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Comunidade</span>
+            <h2>Iniciativas Comunitárias para o Apoio à Saúde Mental</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Carla Souza - 05 de Junho de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Educação_Emocional_nas_Escolas.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Educação</span>
+            <h2>Educação Emocional nas Escolas</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Lucas Oliveira - 12 de Maio de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Treinamento_em_Primeiros_Socorros_Emocionais.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Treinamento</span>
+            <h2>Treinamento em Primeiros Socorros Emocionais</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Fernanda Lima - 20 de Abril de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Alimentação_Saudável_para_o_Bem-Estar_Mental.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Saúde</span>
+            <h2>Alimentação Saudável para o Bem-Estar Mental</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Pedro Gomes - 18 de Março de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Prevenção_do_Suicídio_O_Que_Você_Precisa_Saber.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Prevenção</span>
+            <h2>Prevenção do Suicídio: O Que Você Precisa Saber</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Patrícia Santos - 10 de Fevereiro de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Cuidando_de_Si_Mesmo_Dicas_e_Estratégias.jpg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Cuidado</span>
+            <h2>Cuidando de Si Mesmo: Dicas e Estratégias</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Roberto Costa - 01 de Janeiro de 2023</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+            <img src="/IMG/Iniciativas_de_Apoio_à_Saúde_Mental_no_Brasil.jpeg" alt="Descrição da imagem" class="imagem-cartao">
+            <span class="etiqueta">Iniciativas</span>
+            <h2>Iniciativas de Apoio à Saúde Mental no Brasil</h2>
+            <div class="informacoes-autor">
+                <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+                <p>Claudia Reis - 20 de Novembro de 2022</p>
+            </div>
+            <a href="#" class="leia-mais">Leia Mais</a>
+        </div>
+
+        <div class="cartao cartao-extra">
+    <img src="/IMG/Atividades_Socioeducativas_para_Guardas_Municipais.jpg" alt="Descrição da imagem" class="imagem-cartao">
+    <span class="etiqueta">Atividades</span>
+    <h2>Atividades Socioeducativas para Guardas Municipais</h2>
+    <div class="informacoes-autor">
+        <img src="URL_DA_IMAGEM_DO_AUTOR" alt="Autor" class="imagem-autor">
+        <p>Lucas Pereira - 12 de Outubro de 2023</p>
+    </div>
+    <a href="#" class="leia-mais">Leia Mais</a>
+
+</div>
+
+    </div>
+
     
-    <script src="/JS/Noticias.js"></script> <!-- Carrega o script.js -->
+ 
+</main>
+
+
+    <script src="/JS/Noticias.js"></script> 
 
 </body>
 </html>

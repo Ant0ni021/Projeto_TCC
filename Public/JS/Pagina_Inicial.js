@@ -26,24 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const section = document.getElementById('quem-somos');
     const observerOptions = {
-        root: null, 
-        threshold: 0.1 
+        root: null,
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-              
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target); 
+                entry.target.classList.add('fadeInEffect');
+                entry.target.style.opacity = '1'; // Define a opacidade para 1 quando a animação começar
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    observer.observe(section); 
+    observer.observe(section);
 });
-
-
 
 //Aqui dos cards dos valores
 setTimeout(() => {

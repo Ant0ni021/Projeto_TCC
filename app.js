@@ -22,8 +22,8 @@ app.get('/NupsNews',function(req, res)  {
     res.render('NupsNews');
 });
 
-app.get('/agenda',function(req, res)  {
-    res.render('agenda');
+app.get('/Eventos',function(req, res)  {
+    res.render('Eventos');
 });
 app.get('/Quem_Somos',function(req, res)  {
     res.render('Quem_Somos');
